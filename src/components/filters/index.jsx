@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from './filters.module.css';
 import { useState } from 'react';
 

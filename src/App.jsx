@@ -3,6 +3,7 @@ import Card from './components/card';
 import Filters from './components/filters';
 import tickets from './../tickets.json';
 import { useState } from 'react';
+import logo from './img/logo.png';
 
 function App() {
 	const [currency, setCurrency] = useState('rub');
@@ -24,7 +25,7 @@ function App() {
 	return (
 		<>
 			<img
-				src="./../public/img/logo.png"
+				src={logo}
 				alt="logo"
 				className="logo"
 			/>

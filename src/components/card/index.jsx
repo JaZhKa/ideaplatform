@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import styles from './card.module.css';
-import airlineLogo from './../../../public/img/TK.png';
-import lineairplane from './../../../public/img/lineairplane.png';
+import airlineLogo from './../../img/TK.png';
+import lineairplane from './../../img/lineairplane.png';
 
 const Card = ({ ticket, currency }) => {
 	const viewCurrency = (price, currency) => {
