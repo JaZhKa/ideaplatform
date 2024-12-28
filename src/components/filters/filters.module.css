@@ -1,0 +1,148 @@
+.filterStyle {
+	box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25);
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin-left: 103px;
+	margin-right: 20px;
+	width: 232px;
+	height: 331px;
+	display: flex;
+	flex-direction: column;
+}
+
+.currenciesHeader {
+	color: #4a4a4a;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.transfersHeader {
+	color: #4a4a4a;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 28px 0 0 15px;
+}
+
+.currenciesButtons button {
+	width: 68px;
+	height: 40px;
+	border: 1px solid #d2d5d6;
+	background-color: #ffffff;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #2196f3;
+}
+
+.currenciesButtons button:hover:not(.active) {
+	cursor: pointer;
+	border: 1px solid #64b5f5;
+	background-color: #f2fcff;
+}
+
+.currenciesButtons button:active {
+	background-color: #2196f3;
+	color: #ffffff;
+}
+
+.currenciesButtons .active {
+	background-color: #2196f3;
+	color: #ffffff;
+}
+
+.filterTransfers {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.currencies {
+	padding: 15px 0 0 15px;
+}
+
+.currenciesButtons {
+	display: flex;
+	padding: 12px 0 0 0;
+}
+
+.filterItems {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.rub {
+	border-radius: 5px 0 0 5px;
+}
+
+.eur {
+	border-radius: 0 5px 5px 0;
+}
+
+button,
+button:active,
+button:focus {
+	outline: none;
+}
+
+.filterItem {
+	display: flex;
+  justify-content: space-between;
+	color: #4a4a4a;
+	font-size: 13px;
+	line-height: 35px;
+	padding-left: 15px;
+
+	&:hover {
+		background-color: #f2fcff;
+
+    button {
+      display: block;
+    }
+	}
+
+  button {
+    display: none;
+  }
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+input[type='checkbox'] + label span {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 7px;
+	vertical-align: middle;
+	background: url(./../../../public/img/checkbox.png) no-repeat;
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked + label span {
+	background-position: 0 -21px;
+}
+
+label {
+	cursor: pointer;
+}
+
+.onlyBtn {
+	background-color: transparent;
+  border: none;
+  color: #2196f3;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
